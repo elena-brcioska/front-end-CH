@@ -1124,7 +1124,11 @@ span.step {
 
 .student-videos .video-card {
   border-radius: 10px;
-  background: #fff;
+}
+
+.student-videos .video-card img {
+  width: 90%;
+  align-self: center;
 }
 
 .ratio {
@@ -1386,6 +1390,7 @@ span.step {
   text-align: center;
   font-size: 40px;
   font-weight: 700;
+  margin-bottom: 32px;
 }
 
 .price-card .scholarship h3 span {
@@ -1409,6 +1414,7 @@ span.step {
 
 .price-card .scholarship button {
   width: auto;
+  margin-top: 32px;
 }
 
 .scholarship button a {

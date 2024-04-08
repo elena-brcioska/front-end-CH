@@ -533,12 +533,13 @@
   }
 
   .price-card .scholarship p span {
-    font-size: 18x;
+    font-size: 18px;
     line-height: 1;
   }
 
   .price-card .scholarship h3 {
     font-size: 24px;
+    margin-bottom: 24px;
   }
 
   .price-card .scholarship button {
@@ -606,6 +607,10 @@
     margin-top: 32px;
   }
 
+  .success-stories h5 {
+    font-size: 18px;
+  }
+
   /* projects */
 
   .projects {
@@ -638,6 +643,7 @@
 
   .register h2 {
     width: 100%;
+    font-size: 22px!important;
   }
 
   .register p {
