@@ -461,6 +461,7 @@ button:hover {
 }
 
 .table-wrapper {
+  min-height: 460px;
   overflow-x: auto;
   background: #ffffff;
   border-radius: 10px;

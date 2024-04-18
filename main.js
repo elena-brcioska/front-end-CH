@@ -520,47 +520,16 @@ window._load_script = function(url, callback, isSubmit) {
 })();
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".indicators button");
-    const lgTables = document.querySelectorAll(".lg-table .table-wrapper");
-    const smTables = document.querySelectorAll(".sm-table .table-wrapper");
+// table glide
 
-    const showInitialTable = () => {
-        const initialTable = window.innerWidth > 724 ? lgTables[0] : smTables[0];
-        initialTable.style.display = "block";
-    };
+const configTable = {
+    type: "carousel",
+    perView: 1,
+    animationDuration: 1000,
+  };
+  new Glide(".lg-table", configTable).mount();
 
-    lgTables.forEach((table, index) => {
-        if (index !== 0) {
-            table.style.display = "none";
-        }
-    });
-
-    showInitialTable();
-
-    buttons.forEach((button, index) => {
-        button.addEventListener("click", function() {
-            const tables = window.innerWidth > 724 ? lgTables : smTables;
-
-            tables.forEach(table => {
-                table.style.display = "none";
-            });
-
-            tables[index].style.display = "block";
-        });
-    });
-
-    window.addEventListener("resize", function() {
-        const tables = window.innerWidth > 724 ? lgTables : smTables;
-        const visibleTable = document.querySelector(".table-wrapper[style*='display: block;']");
-
-        tables.forEach(table => {
-            if (table !== visibleTable) {
-                table.style.display = "none";
-            }
-        });
-    });
-});
+  new Glide(".sm-table", configTable).mount();
 
 // load more
 
