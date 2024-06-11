@@ -1,5 +1,6 @@
 * {
   font-family: "Manrope", sans-serif;
+  outline: 1px solid red;
 }
 
 .overflow {
@@ -69,8 +70,8 @@ button:hover {
 /* banner */
 
 .spots {
-  background: #47c6f1;
-  font-weight: 700;
+  background: #18478B;
+  font-weight: 800;
   padding: 10px 0px;
 }
 .spots p {
@@ -996,6 +997,16 @@ span.step {
   border: 1px solid rgba(0, 0, 0, 0.05);
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
+  margin-bottom: 24px;
+}
+
+.contests .card div:first-child {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 16px 36px;
 }
 
 .contests .card .card-body {
@@ -1128,8 +1139,9 @@ span.step {
 }
 
 .student-videos .video-card img {
+  display: block;
   width: 90%;
-  align-self: center;
+  margin: auto;
 }
 
 .ratio {
@@ -1280,6 +1292,10 @@ span.step {
   justify-content: space-between;
 }
 
+.offers .price-header > div div:nth-of-type(1) {
+  flex-basis: 50%;
+}
+
 .offers .price-header span {
   color: #051238;
   font-size: 14px;
@@ -1381,9 +1397,12 @@ span.step {
 }
 
 .price-card .scholarship p span {
+  display: inline-block;
   color: #051238;
   font-size: 24px;
   font-weight: 700;
+  line-height: 120%;
+  width: 50%;
 }
 
 .price-card .scholarship h3 {
@@ -1416,10 +1435,12 @@ span.step {
 .price-card .scholarship button {
   width: auto;
   margin-top: 32px;
+  background: #18478B;
 }
 
 .scholarship button a {
-  color: #051238;
+  color: #fff;
+
 }
 
 .price-card span.step {

@@ -18,7 +18,13 @@
     box-shadow: 0px 4px 30px 0px rgba(101, 119, 131, 0.1);
     margin-bottom: 16px;
   }
+}
 
+@media only screen and (max-width: 1366px) {
+  .contests .card div:first-child {
+    height: 130px;
+    padding: 16px 0;
+  }
 }
 
 @media only screen and (max-width: 1170px) {
@@ -73,19 +79,19 @@
 
   .dropdown-item:hover {
     border-radius: 8px !important;
-    background: #47C6F1 !important;
+    background: #47c6f1 !important;
     cursor: pointer;
   }
 
   .dropdown-item:focus {
     border-radius: 8px !important;
-    background: #47C6F1 !important;
+    background: #47c6f1 !important;
     cursor: pointer;
   }
 
   .active-academy {
     border-radius: 8px !important;
-    background: #47C6F1 !important;
+    background: #47c6f1 !important;
   }
 
   .navbar-grey p,
@@ -279,14 +285,13 @@
   }
 
   .program.weekend p {
-   font-size: 16px;
-   text-align: center;
+    font-size: 16px;
+    text-align: center;
   }
 
   .program.weekend div:last-child {
     margin-left: 0;
   }
-  
 
   /* mega-courses */
 
@@ -417,7 +422,6 @@
 
   /* contests */
 
-
   .contests .card {
     min-height: 400px;
     margin-bottom: 16px;
@@ -497,11 +501,10 @@
     border-bottom: none;
   }
 
-
   .mentor-card .student-testimonial {
     margin-top: 16px;
   }
-  
+
   /* students videos */
 
   .student-videos h2 {
@@ -556,7 +559,7 @@
 
   /* events */
 
-  .events  button {
+  .events button {
     margin: auto;
   }
 
@@ -595,7 +598,6 @@
       opacity: 1;
     }
   }
-  
 
   /* success-stories */
 
@@ -643,7 +645,7 @@
 
   .register h2 {
     width: 100%;
-    font-size: 22px!important;
+    font-size: 22px !important;
   }
 
   .register p {
@@ -684,7 +686,7 @@
   }
 
   .contests .card {
-    min-height: 250px;
+    min-height: 300px;
     margin-bottom: 16px;
   }
 
